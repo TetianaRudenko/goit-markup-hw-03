@@ -1,0 +1,214 @@
+:root {
+    --primary-background-color: #F5F5F5;
+    --secondary-background-color: #F5F4FA;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --secondary-white: rgba(255, 255, 255, 0.6);
+    --brand-color: #000000;
+    --footer-bg-color: #2F303A;
+
+    --main-font-family: Roboto;
+    --logo-font-family: Raleway;
+}
+ body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: var(--main-font-family), sans-serif;
+    /*font-style: normal;
+    font-weight: 400;*/
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+/*Стилі main index.html*/
+/*header*/
+.logo {
+    color: var(--brand-color);
+    text-decoration: none;
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.site-nav,
+.contact-nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+    color: var(--secondary-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus,
+.site-nav .link.current,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.contact-nav .link {
+    color: var(--primary-text-color);
+}
+
+/*section hero*/
+.hero-title {
+    color: var(--primary-white-color);
+    
+    font-family: var(--main-font-family);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+/*button hero*/
+.button {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    border: var(--secondary-background-color);
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.button.hero-em {
+    letter-spacing: 0.06em;
+}
+.button.primary {
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+}
+.pointer {
+    cursor: pointer;
+}
+.button:hover,
+.button:focus,
+.button:active {
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    border: var(--accent-color);
+}
+
+.section-title {
+    color: var(--secondary-text-color);
+
+    /*font-weight: 700;defolt for title*/
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+}
+/*Features*/
+.features .title {
+    color: var(--secondary-text-color);
+
+    font-size: 14px;
+    /*font-weight: 700;defolt*/
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features .text {
+    line-height: 1.71;
+    /* or 171% */
+}
+/*Team section*/
+.team.section {
+    background-color: var(--secondary-background-color);
+}
+.avatar {
+    background-color: var(--primary-white-color);
+}
+.team .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.team .text {
+    color:var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/*footer*/
+.footer {
+    background-color: var(--footer-bg-color);
+}
+.footer .logo {
+    color: var(--primary-white-color);
+}
+.address {
+    font-style: inherit;
+}
+.guide {
+    color: var(--primary-white-color);
+    line-height: 1.71;
+    /* or 171% */
+}
+.contact {
+    color: var(--secondary-white);
+    line-height: 1.71;
+    /* or 171% */
+}
+.contacts .contact:hover,
+.contacts .contact:focus {
+    color: var(--accent-color)
+}
+
+/*Стилі main portfolio.html*/
+/*.portfolio.section {
+    
+}*/
+.filter {
+    color: var(--secondary-text-color);
+   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.button.filter:hover,
+.button.filter:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.project.card {
+    background-color: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+    /*solid dotted double*/
+}
+.projects .title {
+    color: var(--secondary-text-color);
+
+    /*font-weight: 700; defolt for title*/
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project .filter-item {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+    

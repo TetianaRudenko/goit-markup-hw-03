@@ -139,9 +139,12 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /*section hero*/
-.hero {
+.hero.section {
     text-align: center;
-    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--footer-bg-color);
 }
 
 .hero-title {
@@ -203,9 +206,9 @@ h1,h2,h3,h4,h5,h6,p {
     padding-bottom: 94px;
 
 }
-.section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
+.section.no-padding-top {
+    padding-top: 0px;
+    
 }
 .section-title {
     margin-top: 0;
@@ -217,10 +220,15 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.7;
     text-align: center;
 }
-/*features*/
-.container.particular {
-    margin-bottom: 94px;
+.section-title.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
+/*features*/
+
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -253,9 +261,6 @@ h1,h2,h3,h4,h5,h6,p {
 /*work*/
 .works-title {
     margin-bottom: 50px;
-}
-.container.labor {
-    margin-bottom: 94px;
 }
 
 .works {
@@ -293,17 +298,16 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 0px 0px 4px 4px;
 }
 
-.userpic {
-    align-items: center;
-    margin-bottom: 30px;
+.user-discr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
 }
-
 .user-title {
     margin-bottom: 10px;
 }
-.user-text {
-    margin-bottom: 30px;
-}
+
 
 .team .title {
     color: var(--secondary-text-color);
@@ -381,14 +385,14 @@ h1,h2,h3,h4,h5,h6,p {
     display: flex;
     padding-top: 0;
     padding-right: 0;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
     padding-left: 0;
     
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .filter-list .item +.item {
-    margin-left: 3px;
+    margin-left: 8px;
 }
 .filter {
     color: var(--secondary-text-color);
@@ -415,10 +419,8 @@ h1,h2,h3,h4,h5,h6,p {
     margin-right: 30px;
     margin-bottom: 30px;
 
-   
     background-color: var(--primary-white-color);
     border: 1px solid var(--border-card-stroke);
-    /*solid dotted double*/
 }
 
 .card:nth-child(3n) {
@@ -427,6 +429,7 @@ h1,h2,h3,h4,h5,h6,p {
 .card:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
+
 .col {
     display: flex;
     flex-direction: column;

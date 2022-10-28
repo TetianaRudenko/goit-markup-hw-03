@@ -34,16 +34,16 @@
 
    <main>
       <!--hero-->
-      <section class="hero">
+      <section class="hero section">
          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
          <button type="button" class="button primary hero-em pointer">Замовити послугу</button>
       </section>
 
       <!--features-->
-      <section class="section no-padding">  
+      <section class="section">  
          <!--заховати в css для індексатора <h2>Особливості</h2>-->
-         <h2 class="section-title">Особливості</h2>  
-         <div class="container particular">
+         <h2 class="section-title visually-hidden">Особливості</h2>  
+         <div class="container">
             <ul class="features list">
                <li class="item">
                   <h3 class="title">Увага до деталей</h3>
@@ -66,9 +66,9 @@
       </section>
 
       <!--work-->
-      <section class="section no-padding"><!--no-padding-->
+      <section class="section no-padding-top"><!--no-padding-top-->
          <h2 class="section-title works-title">Чим ми займаємося</h2>
-         <div class="container labor">          
+         <div class="container">          
             <ul class="works list">
                <li class="item"><img class="pic" src="./images/img1.jpg" alt="робочий стіл за яким програміст прописує код" width="370"></li>
                <li class="item"><img class="pic" src="./images/img2.jpg" alt="на екрані ноутбука прототип додатку телефона, що тримає в лівій руці" width="370"></li>
@@ -77,30 +77,41 @@
          </div>
       </section>
 
-      <!--our team-->
+      <!--team section-->
       <section class="team section">
          <h2 class="section-title team-title">Наша команда</h2>
          <div class="container">  
             <ul class="team list">
                <li class="avatar">
                   <img class="pic userpic" src="./images/avatar1.jpg" alt="молодик чорнявець в окулярах з бородою в коричневій сорочці" width="270">
-                  <h3 class="title user-title">Ігор Дем'яненко</h3>
-                  <p class="text user-text" lang="en">Product Designer</p>
+                  <div class="user-discr"> 
+                     <h3 class="title user-title">Ігор Дем'яненко</h3>
+                     <p class="text" lang="en">Product Designer</p>
+                  </div>
                </li>
+               
                <li class="avatar">
                   <img class="pic userpic" src="./images/avatar2.jpg" alt="молода усміхнена жінка, білявка в окулярах, в чорному жакеті" width="270">
-                  <h3 class="title user-title">Ольга Рєпіна</h3>
-                  <p class="text user-text" lang="en">Frontend Developer</p>
+                  <div class="user-discr">
+                     <h3 class="title user-title">Ольга Рєпіна</h3>
+                     <p class="text" lang="en">Frontend Developer</p>
+                  </div>
                </li>
+               
                <li class="avatar">
                   <img class="pic userpic" src="./images/avatar3.jpg" alt="усміхнений молодик в блакитній сорочці дивиться в сторону" width="270">
-                  <h3 class="title user-title">Микола Тарасов</h3>
-                  <p class="text user-text" lang="en">Marketing</p>
+                  <div class="user-discr">
+                     <h3 class="title user-title">Микола Тарасов</h3>
+                     <p class="text" lang="en">Marketing</p>
+                  </div>
                </li>
+               
                <li class="avatar">
                   <img class="pic userpic" src="./images/avatar4.jpg" alt="смуглявий чорнявець в окуляр з бородою та у чорній тенісці" width="270">
-                  <h3 class="title user-title">Михайло Єрмаков</h3>
-                  <p class="text user-text" lang="en">UI Designer</p>
+                  <div class="user-discr">
+                     <h3 class="title user-title">Михайло Єрмаков</h3>
+                     <p class="text" lang="en">UI Designer</p>
+                  </div>
                </li>
             </ul>
          </div>
